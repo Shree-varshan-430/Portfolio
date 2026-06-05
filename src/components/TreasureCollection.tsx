@@ -24,9 +24,9 @@ const projects: Project[] = [
   },
   {
     name: "Navigator SEO Audit Suite",
-    description: "An automated technical SEO auditing scanner that processes websites to calculate Core Web Vitals, indexability factors, and outputs structured JSON-LD schemas.",
+    description: "An automated technical SEO auditing scanner processing websites for Core Web Vitals, indexability, and structured JSON-LD schemas. Deployed on real-world client sites including GK Home Construction and RL Edu Skills.",
     tech: ["React", "TypeScript", "Node.js", "Technical SEO", "REST APIs"],
-    results: "Processed 12,000+ site audits, helping clients lift loading times by 1.8s.",
+    results: "Processed 12,000+ audits, boosting search visibility and speed for GK Home & RL Edu Skills.",
     demoLink: "#",
     githubLink: "#",
   },
