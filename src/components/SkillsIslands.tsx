@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Compass, Monitor, Server, Brain, Search, TrendingUp, Paintbrush, Radio } from "lucide-react";
+import { Compass, Monitor, Server, Brain, Search, TrendingUp, Paintbrush, Radio, Smartphone } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -98,6 +98,19 @@ const islandsData: Island[] = [
       { name: "Video Editing", level: 90 },
       { name: "Motion Graphics", level: 85 },
       { name: "Visual Storytelling", level: 90 },
+    ],
+  },
+  {
+    id: "app-development",
+    name: "App Development Island",
+    coords: "08° 14' S / 102° 36' E",
+    icon: Smartphone,
+    description: "Developing high-performance cross-platform mobile applications for iOS and Android environments with offline-first synchronization.",
+    gridPos: { top: "42%", left: "52%" },
+    skills: [
+      { name: "React Native", level: 90 },
+      { name: "Flutter", level: 85 },
+      { name: "Expo", level: 90 },
     ],
   },
 ];
