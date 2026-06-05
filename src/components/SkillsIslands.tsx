@@ -149,11 +149,11 @@ export default function SkillsIslands() {
 
           {/* Desktop Map Layout */}
           <div className="relative w-full h-full hidden md:block">
-            {/* Draw lines connecting islands (voyage route path connecting all 7 nodes) */}
+            {/* Draw lines connecting islands (voyage route path connecting all 7 nodes in an S-curve) */}
             <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" pointerEvents="none">
               {/* Background trace line */}
               <path 
-                d="M 15,20 C 35,15 50,10 70,15 C 60,30 55,35 52,42 C 65,42 75,40 85,45 C 85,60 82,68 80,75 C 68,80 55,83 45,80 C 30,70 25,60 20,50" 
+                d="M 70,15 C 45,15 30,15 15,20 C 10,30 12,42 20,50 C 30,58 42,48 52,42 C 62,36 72,40 85,45 C 90,52 88,68 80,75 C 70,82 55,80 45,80" 
                 fill="none" 
                 stroke="rgba(251, 191, 36, 0.1)" 
                 strokeWidth="0.4" 
@@ -162,7 +162,7 @@ export default function SkillsIslands() {
               
               {/* Animated glowing route path */}
               <motion.path 
-                d="M 15,20 C 35,15 50,10 70,15 C 60,30 55,35 52,42 C 65,42 75,40 85,45 C 85,60 82,68 80,75 C 68,80 55,83 45,80 C 30,70 25,60 20,50" 
+                d="M 70,15 C 45,15 30,15 15,20 C 10,30 12,42 20,50 C 30,58 42,48 52,42 C 62,36 72,40 85,45 C 90,52 88,68 80,75 C 70,82 55,80 45,80" 
                 fill="none" 
                 stroke="url(#map-voyage-grad)" 
                 strokeWidth="0.6" 
