@@ -8,7 +8,6 @@ interface Project {
   name: string;
   description: string;
   tech: string[];
-  results: string;
   demoLink: string;
   githubLink: string;
 }
@@ -18,7 +17,6 @@ const projects: Project[] = [
     name: "GrandLine CRM & AI Orchestrator",
     description: "A comprehensive SaaS dashboard combining full-stack CRM client pipelines with autonomous AI agent triggers for automated sales messaging and workflow follow-ups.",
     tech: ["Next.js", "Node.js", "Express.js", "MongoDB", "AI Agents"],
-    results: "Automated 80% of manual follow-ups & generated $18K+ pipeline leads.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -26,7 +24,6 @@ const projects: Project[] = [
     name: "Navigator SEO Audit Suite",
     description: "An automated technical SEO auditing scanner processing websites for Core Web Vitals, indexability, and structured JSON-LD schemas. Deployed on real-world client sites including GK Home Construction and RL Edu Skills.",
     tech: ["React", "TypeScript", "Node.js", "Technical SEO", "REST APIs"],
-    results: "Processed 12,000+ audits, boosting search visibility and speed for GK Home & RL Edu Skills.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -34,7 +31,6 @@ const projects: Project[] = [
     name: "Logbook Chatbot & voice assistant",
     description: "An intelligent chatbot system utilizing custom voice assistant APIs and document training vectors to deliver instantaneous support automation.",
     tech: ["Next.js", "Firebase", "AI Integration", "Workflow Automation"],
-    results: "Automated 94% of helpdesk tickets for a digital storefront.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -42,7 +38,6 @@ const projects: Project[] = [
     name: "Portside Lead Gen Engine",
     description: "A conversion rate optimized (CRO) landing page builder integrated with lead triggers, webhooks, and automated analytical marketing tracking.",
     tech: ["Next.js", "Tailwind CSS", "Analytics", "Lead Generation"],
-    results: "Boosted client signup conversions by 42%, logging 8,500 qualified leads.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -50,7 +45,6 @@ const projects: Project[] = [
     name: "Moment Keeper Mobile App",
     description: "A secure cross-platform mobile journal application designed to log daily timeline media and milestone logs with automatic offline synchronization.",
     tech: ["React Native", "Firebase", "TypeScript", "Redux Toolkit"],
-    results: "Maintained a 4.9/5 store rating with 5,000+ active encrypted journal repositories.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -58,7 +52,6 @@ const projects: Project[] = [
     name: "Construction Connect App",
     description: "A real-time coordination dashboard connecting general contractors, crew sub-contractors, and clients. Logs payment phases and blueprint document updates.",
     tech: ["React", "Node.js", "Socket.io", "Express.js", "MongoDB"],
-    results: "Streamlined communication on 25+ construction projects, reducing project delays by 15%.",
     demoLink: "#",
     githubLink: "#",
   },
@@ -144,12 +137,6 @@ export default function TreasureCollection() {
                 <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
                   {project.description}
                 </p>
-
-                {/* Core Outcome / Result Badge */}
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-amber-500/5 border border-amber-500/20 text-xs text-amber-400 font-mono mb-6 w-full">
-                  <Award className="h-4 w-4 shrink-0 text-amber-400" />
-                  <span><strong>IMPACT:</strong> {project.results}</span>
-                </div>
 
                 {/* Tech tags */}
                 <div className="flex flex-wrap gap-1.5 mb-8">
