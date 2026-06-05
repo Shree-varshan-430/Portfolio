@@ -130,9 +130,9 @@ export default function NavigationMap() {
         </button>
       </nav>
 
-      {/* Mobile Drawer (Glassmorphic Slide-Down) */}
+      {/* Mobile Drawer (Opaque Solid Background to prevent background text clashing) */}
       {mobileMenuOpen && (
-        <div className="lg:hidden absolute top-20 left-4 right-4 p-6 glass-panel rounded-2xl border border-slate-800/80 shadow-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
+        <div className="lg:hidden absolute top-20 left-4 right-4 p-6 bg-slate-950 border border-slate-800/90 shadow-[0_10px_50px_rgba(0,0,0,0.8)] rounded-2xl flex flex-col gap-4 animate-in fade-in slide-in-from-top-4 duration-300">
           <div className="flex justify-between items-center pb-2 border-b border-slate-800/40">
             <span className="text-[10px] font-mono text-slate-500 uppercase tracking-widest">Navigation Logs</span>
             <span className="text-[10px] font-mono text-amber-400 font-bold">{compassAngle}° BEARING</span>
