@@ -46,6 +46,22 @@ const projects: Project[] = [
     demoLink: "#",
     githubLink: "#",
   },
+  {
+    name: "Moment Keeper Mobile App",
+    description: "A secure cross-platform mobile journal application designed to log daily timeline media and milestone logs with automatic offline synchronization.",
+    tech: ["React Native", "Firebase", "TypeScript", "Redux Toolkit"],
+    results: "Maintained a 4.9/5 store rating with 5,000+ active encrypted journal repositories.",
+    demoLink: "#",
+    githubLink: "#",
+  },
+  {
+    name: "Construction Connect App",
+    description: "A real-time coordination dashboard connecting general contractors, crew sub-contractors, and clients. Logs payment phases and blueprint document updates.",
+    tech: ["React", "Node.js", "Socket.io", "Express.js", "MongoDB"],
+    results: "Streamlined communication on 25+ construction projects, reducing project delays by 15%.",
+    demoLink: "#",
+    githubLink: "#",
+  },
 ];
 
 export default function TreasureCollection() {
