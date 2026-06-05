@@ -149,9 +149,37 @@ export default function SkillsIslands() {
 
           {/* Desktop Map Layout */}
           <div className="relative w-full h-full hidden md:block">
-            {/* Draw lines connecting islands (simplified voyage route) */}
-            <svg className="absolute inset-0 w-full h-full opacity-20" pointerEvents="none">
-              <path d="M 120 100 Q 250 80 500 80 T 600 240 Q 450 300 320 380 T 650 380" fill="none" stroke="#64748b" strokeWidth="1.5" strokeDasharray="4,4" />
+            {/* Draw lines connecting islands (voyage route path connecting all 7 nodes) */}
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none" pointerEvents="none">
+              {/* Background trace line */}
+              <path 
+                d="M 15,20 C 35,15 50,10 70,15 C 60,30 55,35 52,42 C 65,42 75,40 85,45 C 85,60 82,68 80,75 C 68,80 55,83 45,80 C 30,70 25,60 20,50" 
+                fill="none" 
+                stroke="rgba(251, 191, 36, 0.1)" 
+                strokeWidth="0.4" 
+                strokeDasharray="1, 1" 
+              />
+              
+              {/* Animated glowing route path */}
+              <motion.path 
+                d="M 15,20 C 35,15 50,10 70,15 C 60,30 55,35 52,42 C 65,42 75,40 85,45 C 85,60 82,68 80,75 C 68,80 55,83 45,80 C 30,70 25,60 20,50" 
+                fill="none" 
+                stroke="url(#map-voyage-grad)" 
+                strokeWidth="0.6" 
+                strokeDasharray="2, 1.5"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 3.5, ease: "easeInOut" }}
+              />
+              
+              <defs>
+                <linearGradient id="map-voyage-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#fbbf24" />
+                  <stop offset="30%" stopColor="#f59e0b" />
+                  <stop offset="70%" stopColor="#38bdf8" />
+                  <stop offset="100%" stopColor="#6366f1" />
+                </linearGradient>
+              </defs>
             </svg>
 
             {/* Islands as absolute positions */}
