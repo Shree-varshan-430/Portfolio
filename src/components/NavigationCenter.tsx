@@ -64,8 +64,8 @@ export default function NavigationCenter() {
               </div>
               <div>
                 <div className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Digital Mailbox</div>
-                <a href="mailto:hello@shreevarshan.dev" className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium focus-ring rounded-lg p-0.5">
-                  hello@shreevarshan.dev
+                <a href="mailto:shreevarshan35@gmail.com" className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium focus-ring rounded-lg p-0.5">
+                  shreevarshan35@gmail.com
                 </a>
               </div>
             </div>
