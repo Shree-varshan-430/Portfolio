@@ -65,20 +65,20 @@ export default function CaptainsLog() {
               
               <div className="mt-6 space-y-2.5 border-t border-slate-800/60 pt-5 text-left text-xs font-mono">
                 <div className="flex justify-between py-1 border-b border-slate-900/60">
-                  <span className="text-slate-500 uppercase">Registry:</span>
-                  <span className="text-slate-300">B.TECH FULL-STACK</span>
+                  <span className="text-slate-400 uppercase">Registry:</span>
+                  <span className="text-slate-200 font-medium">B.TECH FULL-STACK</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-900/60">
-                  <span className="text-slate-500 uppercase">Sector:</span>
-                  <span className="text-slate-300">AI / WEB / SEO / CREATIVE</span>
+                  <span className="text-slate-400 uppercase">Sector:</span>
+                  <span className="text-slate-200 font-medium">AI / WEB / SEO / CREATIVE</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-slate-900/60">
-                  <span className="text-slate-500 uppercase">Vessel:</span>
-                  <span className="text-slate-300">IDEAS TO DIGITAL REALITY</span>
+                  <span className="text-slate-400 uppercase">Vessel:</span>
+                  <span className="text-slate-200 font-medium">IDEAS TO DIGITAL REALITY</span>
                 </div>
                 <div className="flex justify-between py-1">
-                  <span className="text-slate-500 uppercase">Voyage Path:</span>
-                  <span className="text-amber-400 font-bold">THE GRAND LINE OF TECH</span>
+                  <span className="text-slate-400 uppercase">Voyage Path:</span>
+                  <span className="text-amber-450 font-bold">THE GRAND LINE OF TECH</span>
                 </div>
               </div>
             </div>
@@ -100,10 +100,10 @@ export default function CaptainsLog() {
               <span>LOGENTRY_01: The Journey Begins</span>
             </h3>
             
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed font-sans font-light">
+            <p className="text-slate-200 text-sm md:text-base leading-relaxed font-sans font-light">
               I view software development not just as writing syntax, but as an ongoing exploration into uncharted digital territories. As a B.Tech graduate, my focus has been to sail through the ever-evolving oceans of Next.js, React, APIs, and microservices. I build applications that are clean, performant, and scale seamlessly.
             </p>
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed font-sans font-light mt-4">
+            <p className="text-slate-200 text-sm md:text-base leading-relaxed font-sans font-light mt-4">
               But web development is only one coordinates system on my compass. I actively venture into AI agents and workflow automation, building conversational interfaces that simplify human workflows. I align these technical abilities with specialized digital marketing, technical SEO, and conversion optimization to ensure that the products I build don't just exist—they sail to the top of search rankings and drive tangible business revenue.
             </p>
           </div>
@@ -116,11 +116,11 @@ export default function CaptainsLog() {
                 whileHover={{ y: -3 }}
                 className="glass-panel-light rounded-2xl p-5 border border-slate-800/40 flex flex-col gap-2 transition-all duration-300 hover:border-amber-500/20"
               >
-                <div className="flex items-center gap-2 font-semibold text-slate-200 text-sm">
+                <div className="flex items-center gap-2 font-semibold text-slate-150 text-sm">
                   <Award className="h-4.5 w-4.5 text-amber-400 shrink-0" />
                   <span>{item.label}</span>
                 </div>
-                <p className="text-xs text-slate-400 font-sans font-light leading-relaxed">
+                <p className="text-xs text-slate-300 font-sans font-light leading-relaxed">
                   {item.desc}
                 </p>
               </motion.div>
@@ -133,7 +133,7 @@ export default function CaptainsLog() {
               <Target className="h-4.5 w-4.5 text-amber-400" />
               <span>STRATEGIC_OBJECTIVES</span>
             </h3>
-            <ul className="space-y-3.5 text-slate-300 text-sm font-sans font-light">
+            <ul className="space-y-3.5 text-slate-200 text-sm font-sans font-light">
               {goals.map((goal, idx) => (
                 <li key={idx} className="flex items-start gap-3">
                   <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-slate-900 border border-slate-800 text-[10px] font-mono font-bold text-amber-400 mt-0.5">

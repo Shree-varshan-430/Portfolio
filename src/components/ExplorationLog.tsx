@@ -62,20 +62,22 @@ export default function ExplorationLog() {
         {posts.map((post, idx) => (
           <motion.article
             key={idx}
+            tabIndex={0}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.6, delay: idx * 0.1 }}
-            className="group glass-panel rounded-3xl p-6 border border-slate-800/60 overflow-hidden cursor-pointer hover:border-amber-400/30 transition-all duration-300 flex flex-col justify-between h-full shadow-lg"
+            className="group glass-panel rounded-3xl p-6 border border-slate-800/60 overflow-hidden cursor-pointer hover:border-amber-400/30 transition-all duration-300 focus-ring flex flex-col justify-between h-full shadow-lg"
+            aria-label={`Log Entry: ${post.title}`}
           >
             <div>
               {/* Journal Card Header */}
-              <div className="flex items-center justify-between border-b border-slate-800/40 pb-3 mb-5 text-[10px] font-mono text-slate-500">
+              <div className="flex items-center justify-between border-b border-slate-800/40 pb-3 mb-5 text-[10px] font-mono text-slate-400">
                 <span className="flex items-center gap-1">
                   <Tag className="h-3 w-3 text-amber-500/60" />
-                  <span className="uppercase text-slate-400 font-semibold">{post.category}</span>
+                  <span className="uppercase text-slate-200 font-medium">{post.category}</span>
                 </span>
-                <span className="text-amber-500">{post.entryNumber}</span>
+                <span className="text-amber-450 font-bold">{post.entryNumber}</span>
               </div>
 
               {/* Title */}
@@ -84,14 +86,14 @@ export default function ExplorationLog() {
               </h3>
 
               {/* Excerpt */}
-              <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
+              <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
                 {post.excerpt}
               </p>
             </div>
 
             {/* Footer */}
             <div className="flex items-center justify-between border-t border-slate-800/40 pt-4 mt-auto">
-              <span className="flex items-center gap-1 text-[10px] font-mono text-slate-500">
+              <span className="flex items-center gap-1 text-[10px] font-mono text-slate-400">
                 <Calendar className="h-3 w-3" />
                 <span>{post.date}</span>
               </span>

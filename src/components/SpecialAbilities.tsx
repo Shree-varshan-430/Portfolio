@@ -66,6 +66,7 @@ function HolographicCard({ service, index }: { service: Service; index: number }
 
   return (
     <motion.div
+      tabIndex={0}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
@@ -73,7 +74,8 @@ function HolographicCard({ service, index }: { service: Service; index: number }
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="group relative glass-panel rounded-3xl p-6 md:p-8 border border-slate-800/60 overflow-hidden cursor-default transition-all duration-300 hover:border-amber-400/30 flex flex-col justify-between h-full shadow-lg"
+      className="group relative glass-panel rounded-3xl p-6 md:p-8 border border-slate-800/60 overflow-hidden cursor-default transition-all duration-300 hover:border-amber-400/30 focus-ring flex flex-col justify-between h-full shadow-lg"
+      aria-label={`Service: ${service.title}`}
     >
       {/* Holographic Radial Reflection Overlay */}
       {isHovered && (
@@ -97,7 +99,7 @@ function HolographicCard({ service, index }: { service: Service; index: number }
         </div>
 
         {/* Subtitle Tagline */}
-        <div className="text-[9px] font-mono text-slate-500 tracking-wider mb-2 uppercase">
+        <div className="text-[9px] font-mono text-slate-400 tracking-wider mb-2 uppercase">
           {service.tagline}
         </div>
 
@@ -107,18 +109,18 @@ function HolographicCard({ service, index }: { service: Service; index: number }
         </h3>
 
         {/* Description */}
-        <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
+        <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
           {service.description}
         </p>
       </div>
 
       {/* Bullet Capability Points */}
       <div className="mt-auto border-t border-slate-800/40 pt-4">
-        <div className="text-[10px] font-mono text-slate-500 uppercase tracking-widest mb-3">Key Solutions</div>
-        <ul className="space-y-2 text-xs font-sans text-slate-300 font-light">
+        <div className="text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-3">Key Solutions</div>
+        <ul className="space-y-2 text-xs font-sans text-slate-200 font-light">
           {service.capabilities.map((cap, idx) => (
             <li key={idx} className="flex items-center gap-2">
-              <span className="h-1 w-1 rounded-full bg-amber-400" />
+              <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
               <span>{cap}</span>
             </li>
           ))}
@@ -154,10 +156,12 @@ export default function SpecialAbilities() {
         
         {/* Final CTA Card inside Services Grid */}
         <motion.div
+          tabIndex={0}
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="group relative rounded-3xl p-6 md:p-8 border border-dashed border-slate-800 bg-slate-950/20 flex flex-col justify-between h-full min-h-[300px]"
+          className="group relative rounded-3xl p-6 md:p-8 border border-dashed border-slate-800 bg-slate-950/20 flex flex-col justify-between h-full min-h-[300px] focus-ring"
+          aria-label="Need a Custom Expedition?"
         >
           <div className="absolute inset-0 coordinate-grid opacity-10 pointer-events-none" />
           
@@ -170,7 +174,7 @@ export default function SpecialAbilities() {
               Need a Custom Expedition?
             </h3>
             
-            <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light">
+            <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light">
               Do you have a unique project requirement, complex automation structure, or an ambitious SEO growth goal? Let's design a custom coordinates journey tailored to your needs.
             </p>
           </div>
@@ -180,7 +184,8 @@ export default function SpecialAbilities() {
               const el = document.getElementById("navigation-center");
               if (el) el.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 hover:border-amber-400/40 hover:bg-slate-850 transition-all mt-6 cursor-pointer"
+            className="btn-secondary focus-ring w-full mt-6 gap-2"
+            aria-label="Set Sail For Collaboration"
           >
             <span>Set Sail For Collaboration</span>
             <Compass className="h-4 w-4" />

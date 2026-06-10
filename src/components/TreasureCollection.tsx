@@ -134,7 +134,7 @@ export default function TreasureCollection() {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
+                <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
                   {project.description}
                 </p>
 
@@ -155,7 +155,8 @@ export default function TreasureCollection() {
               <div className="flex items-center justify-between border-t border-slate-800/40 pt-4 mt-auto">
                 <a
                   href={project.githubLink}
-                  className="flex items-center gap-1.5 text-xs font-mono text-slate-500 hover:text-slate-200 transition-colors"
+                  className="flex items-center gap-1.5 text-xs font-mono text-slate-400 hover:text-amber-450 focus-ring rounded-lg p-1.5 transition-colors"
+                  aria-label={`View GitHub source code for ${project.name}`}
                 >
                   <GitBranch className="h-3.5 w-3.5" />
                   <span>Source Code</span>
@@ -163,10 +164,11 @@ export default function TreasureCollection() {
 
                 <a
                   href={project.demoLink}
-                  className="inline-flex items-center gap-1.2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono text-amber-400 hover:bg-slate-850 hover:border-amber-400/40 transition-all"
+                  className="btn-secondary focus-ring h-9 text-xs px-4 gap-1.5 rounded-xl"
+                  aria-label={`View Live Project for ${project.name}`}
                 >
-                  <span>Launch Expedition</span>
-                  <ExternalLink className="h-3 w-3" />
+                  <span>View Live Project</span>
+                  <ExternalLink className="h-3.5 w-3.5" />
                 </a>
               </div>
             </motion.div>

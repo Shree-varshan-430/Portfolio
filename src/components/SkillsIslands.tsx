@@ -191,7 +191,7 @@ export default function SkillsIslands() {
                 <button
                   key={island.id}
                   onClick={() => setActiveIslandId(island.id)}
-                  className="absolute cursor-pointer transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 group z-10"
+                  className="absolute cursor-pointer transition-all duration-300 transform -translate-x-1/2 -translate-y-1/2 group z-10 focus-ring rounded-full p-1"
                   style={{ top: island.gridPos.top, left: island.gridPos.left }}
                 >
                   <div className="relative flex items-center justify-center">
@@ -236,10 +236,10 @@ export default function SkillsIslands() {
                 <button
                   key={island.id}
                   onClick={() => setActiveIslandId(island.id)}
-                  className={`flex items-center gap-1.5 px-3 py-1.8 rounded-xl border text-xs font-mono transition-all ${
+                  className={`flex h-11 items-center gap-1.5 px-4 rounded-xl border text-xs font-mono transition-all focus-ring ${
                     isActive 
                       ? "bg-amber-500 border-amber-500 text-slate-950 font-semibold shadow-[0_4px_12px_rgba(251,191,36,0.3)]" 
-                      : "bg-slate-950/80 border-slate-800 text-slate-400"
+                      : "bg-slate-950/85 border-slate-800/80 text-slate-300"
                   }`}
                 >
                   <IslandIcon className="h-3.5 w-3.5" />
@@ -270,7 +270,7 @@ export default function SkillsIslands() {
                     </div>
                     <div>
                       <h3 className="font-heading font-semibold text-slate-100 tracking-wide text-lg">{activeIsland.name}</h3>
-                      <div className="flex items-center gap-1 text-[9px] font-mono text-slate-500 uppercase mt-0.5">
+                      <div className="flex items-center gap-1 text-[9px] font-mono text-slate-400 uppercase mt-0.5">
                         <Radio className="h-2.5 w-2.5 text-amber-500/60" />
                         <span>COORDS: {activeIsland.coords}</span>
                       </div>
@@ -278,13 +278,13 @@ export default function SkillsIslands() {
                   </div>
                 </div>
 
-                <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
+                <p className="text-slate-200 text-xs md:text-sm leading-relaxed font-sans font-light mb-6">
                   {activeIsland.description}
                 </p>
 
                 {/* Skill Capability Progress Logs */}
                 <div className="space-y-4">
-                  <div className="text-[10px] font-mono text-slate-500 uppercase tracking-widest mb-2">Technical Logs</div>
+                  <div className="text-[10px] font-mono text-slate-400 uppercase tracking-widest mb-2">Technical Logs</div>
                   
                   {activeIsland.skills.map((skill, index) => (
                     <div key={index} className="space-y-1.5">
@@ -307,7 +307,7 @@ export default function SkillsIslands() {
               </div>
 
               {/* Voyage Status Footer */}
-              <div className="mt-8 pt-4 border-t border-slate-800/40 flex items-center justify-between text-[9px] font-mono text-slate-500">
+              <div className="mt-8 pt-4 border-t border-slate-800/40 flex items-center justify-between text-[9px] font-mono text-slate-400">
                 <span>SECTOR EXPLORATION: COMPLETE</span>
                 <span className="text-amber-400">LOGGED</span>
               </div>

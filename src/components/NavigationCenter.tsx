@@ -52,19 +52,19 @@ export default function NavigationCenter() {
               <h3 className="text-xl font-heading font-semibold text-slate-100 tracking-wide">
                 Set Sail For Collaboration
               </h3>
-              <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mt-2">
+              <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light mt-2">
                 Whether you want to build a full-stack SaaS product, optimize your website's search footprint, construct AI automations, or recruit a new crew member, I am ready to navigate.
               </p>
             </div>
 
-            {/* Email Coordinate */}
+             {/* Email Coordinate */}
             <div className="flex items-center gap-4 group">
               <div className="h-10 w-10 rounded-xl bg-slate-900 border border-slate-800 text-amber-400 flex items-center justify-center group-hover:border-amber-400/40 transition-colors">
                 <Mail className="h-4.5 w-4.5" />
               </div>
               <div>
-                <div className="text-[9px] font-mono text-slate-500 uppercase tracking-widest">Digital Mailbox</div>
-                <a href="mailto:hello@shreevarshan.dev" className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium">
+                <div className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Digital Mailbox</div>
+                <a href="mailto:hello@shreevarshan.dev" className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium focus-ring rounded-lg p-0.5">
                   hello@shreevarshan.dev
                 </a>
               </div>
@@ -76,12 +76,12 @@ export default function NavigationCenter() {
                 <FileText className="h-4.5 w-4.5" />
               </div>
               <div>
-                <div className="text-[9px] font-mono text-slate-500 uppercase tracking-widest">Credentials Log</div>
+                <div className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Credentials Log</div>
                 {/* Print-friendly PDF anchor */}
                 <a 
                   href="/resume.pdf" 
                   download="Shree_Varshan_Resume.pdf"
-                  className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium flex items-center gap-1"
+                  className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium flex items-center gap-1 focus-ring rounded-lg p-0.5"
                 >
                   <span>Download Tech Ledger (PDF)</span>
                 </a>
@@ -91,14 +91,14 @@ export default function NavigationCenter() {
 
           {/* Social Coordinates & Monogram Footer */}
           <div className="mt-12 pt-6 border-t border-slate-800/40 space-y-4 relative z-10">
-            <div className="text-[9px] font-mono text-slate-500 uppercase tracking-widest">Voyage Links</div>
+            <div className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Voyage Links</div>
             
             <div className="flex items-center gap-3">
               <a
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300"
+                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300 focus-ring"
               >
                 <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
@@ -109,7 +109,7 @@ export default function NavigationCenter() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300"
+                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300 focus-ring"
               >
                 <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -121,7 +121,7 @@ export default function NavigationCenter() {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300"
+                className="h-10 w-10 rounded-xl bg-slate-900/60 border border-slate-800/60 text-slate-400 hover:text-amber-400 hover:border-amber-400/40 flex items-center justify-center transition-all duration-300 focus-ring"
               >
                 <svg className="h-4.5 w-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
@@ -145,7 +145,7 @@ export default function NavigationCenter() {
 
             {/* Name Input */}
             <div className="space-y-1.5">
-              <label className="block text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+              <label className="block text-[10px] font-mono text-slate-400 uppercase tracking-widest">
                 [COORDINATE: SENDER_NAME]
               </label>
               <input
@@ -155,13 +155,13 @@ export default function NavigationCenter() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter your name or vessel registry..."
-                className="w-full h-11 px-4 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-xs font-sans placeholder-slate-600 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/20 transition-all duration-300 disabled:opacity-50"
+                className="w-full h-11 px-4 rounded-xl bg-slate-950/80 border border-slate-850 text-slate-200 text-xs font-sans placeholder-slate-600 transition-all duration-300 disabled:opacity-50 focus-ring focus:border-amber-400/60"
               />
             </div>
 
             {/* Email Input */}
             <div className="space-y-1.5">
-              <label className="block text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+              <label className="block text-[10px] font-mono text-slate-400 uppercase tracking-widest">
                 [COORDINATE: EMAIL_ADDRESS]
               </label>
               <input
@@ -171,13 +171,13 @@ export default function NavigationCenter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your return coordinates..."
-                className="w-full h-11 px-4 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-xs font-sans placeholder-slate-600 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/20 transition-all duration-300 disabled:opacity-50"
+                className="w-full h-11 px-4 rounded-xl bg-slate-950/80 border border-slate-850 text-slate-200 text-xs font-sans placeholder-slate-600 transition-all duration-300 disabled:opacity-50 focus-ring focus:border-amber-400/60"
               />
             </div>
 
             {/* Message Input */}
             <div className="space-y-1.5">
-              <label className="block text-[10px] font-mono text-slate-500 uppercase tracking-widest">
+              <label className="block text-[10px] font-mono text-slate-400 uppercase tracking-widest">
                 [COORDINATE: LOG_PAYLOAD]
               </label>
               <textarea
@@ -187,7 +187,7 @@ export default function NavigationCenter() {
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Write your transmission payload details here..."
                 rows={5}
-                className="w-full p-4 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-xs font-sans placeholder-slate-600 focus:outline-none focus:border-amber-400/50 focus:ring-1 focus:ring-amber-400/20 transition-all duration-300 resize-none disabled:opacity-50"
+                className="w-full p-4 rounded-xl bg-slate-950/80 border border-slate-850 text-slate-200 text-xs font-sans placeholder-slate-600 transition-all duration-300 resize-none disabled:opacity-50 focus-ring focus:border-amber-400/60"
               />
             </div>
 
@@ -195,12 +195,12 @@ export default function NavigationCenter() {
             <button
               type="submit"
               disabled={status !== "idle" || !name || !email || !message}
-              className={`w-full h-11 rounded-xl font-mono text-xs uppercase tracking-wider font-bold transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${
+              className={`btn-primary focus-ring w-full h-11 uppercase font-mono text-xs tracking-wider flex items-center justify-center gap-2 disabled:opacity-40 disabled:cursor-not-allowed ${
                 status === "success"
-                  ? "bg-emerald-500 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.3)]"
+                  ? "bg-gradient-to-r from-emerald-500 to-emerald-600 text-slate-950 shadow-[0_0_15px_rgba(16,185,129,0.3)] hover:from-emerald-400 hover:to-emerald-500"
                   : status === "sending"
                   ? "bg-slate-800 text-slate-400 cursor-not-allowed"
-                  : "bg-amber-500 hover:bg-amber-400 text-slate-950 shadow-[0_4px_15px_rgba(251,191,36,0.25)] disabled:opacity-40 disabled:cursor-not-allowed"
+                  : ""
               }`}
             >
               {status === "success" ? (

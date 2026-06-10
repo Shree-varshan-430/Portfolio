@@ -153,7 +153,11 @@ export default function GrandRoute() {
                     isEven ? "md:pr-10" : "md:pl-10"
                   }`}
                 >
-                  <div className="group glass-panel rounded-2xl p-5 md:p-6 border border-slate-800/60 relative overflow-hidden transition-all duration-300 hover:border-amber-400/30">
+                  <div 
+                    tabIndex={0} 
+                    className="group glass-panel rounded-2xl p-5 md:p-6 border border-slate-800/60 relative overflow-hidden transition-all duration-300 hover:border-amber-400/30 focus-ring"
+                    aria-label={`Milestone: ${milestone.title}, Year: ${milestone.year}`}
+                  >
                     {/* Log Card Header */}
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-3 border-b border-slate-800/40 pb-2.5">
                       <div className="flex items-center gap-2">
@@ -170,16 +174,16 @@ export default function GrandRoute() {
                       </span>
                     </div>
 
-                    <div className="text-xs font-mono text-slate-400 mb-2 font-medium">
+                    <div className="text-xs font-mono text-slate-200 mb-2 font-medium">
                       {milestone.subtitle}
                     </div>
 
-                    <p className="text-slate-400 text-xs md:text-sm leading-relaxed font-sans font-light mb-4">
+                    <p className="text-slate-300 text-xs md:text-sm leading-relaxed font-sans font-light mb-4">
                       {milestone.description}
                     </p>
 
                     {/* Coordinates & Status check */}
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-t border-slate-900/60 pt-3 text-[9px] font-mono text-slate-500">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 border-t border-slate-900/60 pt-3 text-[9px] font-mono text-slate-400">
                       <span className="flex items-center gap-1">
                         <MapPin className="h-3 w-3 text-amber-500/60" />
                         <span>{milestone.coords}</span>

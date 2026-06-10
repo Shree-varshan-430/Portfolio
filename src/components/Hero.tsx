@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Compass, Ship, ChevronDown, Award, Sparkles } from "lucide-react";
+import { Compass, Ship, ChevronDown, Award, Sparkles, Mail } from "lucide-react";
 
 export default function Hero() {
   const scrollToSection = (id: string) => {
@@ -93,19 +93,19 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="flex flex-wrap items-center justify-center gap-2 max-w-2xl text-xs md:text-sm font-mono text-slate-400"
+          className="flex flex-wrap items-center justify-center gap-2 max-w-2xl text-xs md:text-sm font-mono text-slate-200"
         >
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">B.Tech Graduate</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">B.Tech Graduate</span>
           <span className="text-slate-700">•</span>
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">Full Stack Developer</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">Full Stack Developer</span>
           <span className="text-slate-700">•</span>
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">AI Builder</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">AI Builder</span>
           <span className="text-slate-700">•</span>
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">SEO Specialist</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">SEO Specialist</span>
           <span className="text-slate-700">•</span>
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">Digital Marketer</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">Digital Marketer</span>
           <span className="text-slate-700">•</span>
-          <span className="px-2.5 py-1 rounded bg-slate-900/40 border border-slate-800/50">Video Editor</span>
+          <span className="px-2.5 py-1 rounded bg-slate-900/60 border border-slate-800/80">Video Editor</span>
         </motion.div>
 
         {/* Short Personal Hook */}
@@ -113,9 +113,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.6 }}
-          className="text-slate-400 text-sm md:text-lg max-w-xl font-sans font-light leading-relaxed"
+          className="text-slate-300 text-sm md:text-lg max-w-xl font-sans font-light leading-relaxed"
         >
-          Welcome, Traveler. I am <strong className="text-slate-200 font-semibold">Shree Varshan</strong>, a digital explorer crafting high-performance full-stack applications, intelligent AI workflows, and data-driven marketing campaigns along the Grand Line of technology.
+          Welcome, Traveler. I am <strong className="text-slate-100 font-semibold">Shree Varshan</strong>, a digital explorer crafting high-performance full-stack applications, intelligent AI workflows, and data-driven marketing campaigns along the Grand Line of technology.
         </motion.p>
 
         {/* Call To Actions */}
@@ -126,19 +126,21 @@ export default function Hero() {
           className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto"
         >
           <button
-            onClick={() => scrollToSection("captains-log")}
-            className="group flex h-12 items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-600 px-6 font-sans text-sm font-semibold text-slate-950 transition-all duration-300 hover:from-amber-400 hover:to-amber-500 shadow-[0_4px_20px_rgba(251,191,36,0.35)] hover:shadow-[0_4px_25px_rgba(251,191,36,0.5)] cursor-pointer"
+            onClick={() => scrollToSection("treasure-collection")}
+            className="btn-primary focus-ring group"
+            aria-label="View Projects and Work"
           >
-            <Compass className="h-4 w-4 animate-spin" style={{ animationDuration: "12s" }} />
-            <span>Explore My Journey</span>
+            <Ship className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
+            <span>View Projects & Work</span>
           </button>
           
           <button
-            onClick={() => scrollToSection("treasure-collection")}
-            className="group flex h-12 items-center justify-center gap-2 rounded-xl border border-slate-700/60 bg-slate-900/40 px-6 font-sans text-sm font-semibold text-slate-300 transition-all duration-300 hover:border-amber-400/40 hover:bg-slate-900/80 cursor-pointer glass-panel-light"
+            onClick={() => scrollToSection("navigation-center")}
+            className="btn-secondary focus-ring group"
+            aria-label="Get In Touch"
           >
-            <Ship className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            <span>View My Projects</span>
+            <Mail className="h-4 w-4" />
+            <span>Get In Touch</span>
           </button>
         </motion.div>
       </div>
@@ -156,16 +158,14 @@ export default function Hero() {
       </motion.div>
 
       {/* Anchor Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 0.7, y: [0, 5, 0] }}
-        transition={{ delay: 1.4, duration: 1.5, repeat: Infinity }}
+      <button
         onClick={() => scrollToSection("captains-log")}
-        className="absolute bottom-8 flex flex-col items-center gap-1.5 cursor-pointer text-slate-500 hover:text-amber-400 transition-colors z-10"
+        className="absolute bottom-8 flex flex-col items-center gap-1.5 cursor-pointer text-slate-400 hover:text-amber-400 transition-colors z-10 focus-ring rounded-lg p-1 bg-transparent border-none"
+        aria-label="Scroll to Captain's Log"
       >
         <span className="text-[9px] font-mono tracking-widest uppercase">LOGS AHEAD</span>
         <ChevronDown className="h-4 w-4" />
-      </motion.div>
+      </button>
     </section>
   );
 }
