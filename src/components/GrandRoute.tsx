@@ -81,7 +81,7 @@ export default function GrandRoute() {
           <span>Section 04</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tight text-slate-100">
-          The Grand Route
+          The Grand Route: Developer Timeline
         </h2>
         <div className="h-1 w-12 bg-amber-400 rounded-full mt-2" />
         <p className="text-slate-400 text-xs font-mono max-w-sm mt-3 uppercase tracking-wider">

@@ -83,9 +83,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-4xl md:text-7xl font-bold font-sans tracking-tight text-slate-100 max-w-3xl leading-[1.1]"
+          className="text-4xl md:text-7xl font-bold font-sans tracking-tight text-slate-100 max-w-3xl leading-[1.1] flex flex-col items-center gap-2"
         >
-          Charting New Routes Through <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-sky-300 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(251,191,36,0.15)]">Technology</span>
+          <span className="text-xs md:text-base font-mono text-amber-400 tracking-[0.2em] uppercase font-normal block mb-1">
+            Shree Varshan // Full Stack Developer & AI Builder
+          </span>
+          <span>
+            Charting New Routes Through <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-sky-300 bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(251,191,36,0.15)]">Technology</span>
+          </span>
         </motion.h1>
 
         {/* Subheading / Badges */}
