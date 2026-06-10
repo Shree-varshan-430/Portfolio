@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { motion } from "framer-motion";
 import { Send, Mail, FileText, Compass, CheckCircle2 } from "lucide-react";
 
@@ -9,6 +9,16 @@ export default function NavigationCenter() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "success">("idle");
+  const [emailVisible, setEmailVisible] = useState(false);
+  const [displayEmail, setDisplayEmail] = useState("");
+
+  useEffect(() => {
+    // Dynamically reconstruct email on client-side to obfuscate from scraper bots
+    const user = "shreevarshan35";
+    const domain = "gmail.com";
+    setDisplayEmail(`${user}@${domain}`);
+    setEmailVisible(true);
+  }, []);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -64,9 +74,15 @@ export default function NavigationCenter() {
               </div>
               <div>
                 <div className="text-[9px] font-mono text-slate-400 uppercase tracking-widest">Digital Mailbox</div>
-                <a href="mailto:shreevarshan35@gmail.com" className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium focus-ring rounded-lg p-0.5">
-                  shreevarshan35@gmail.com
-                </a>
+                {emailVisible ? (
+                  <a href={`mailto:${displayEmail}`} className="text-sm font-sans text-slate-200 hover:text-amber-400 transition-colors font-medium focus-ring rounded-lg p-0.5">
+                    {displayEmail}
+                  </a>
+                ) : (
+                  <span className="text-sm font-sans text-slate-400 font-medium p-0.5">
+                    shreevarshan35 [at] gmail.com
+                  </span>
+                )}
               </div>
             </div>
 
