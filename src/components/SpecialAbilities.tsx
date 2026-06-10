@@ -140,8 +140,11 @@ export default function SpecialAbilities() {
           <span>Section 05</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tight text-slate-100">
-          Special Abilities: Full Stack & AI Services
+          Services
         </h2>
+        <span className="text-xs font-mono text-amber-400 uppercase tracking-widest mt-1 block">
+          Special Abilities
+        </span>
         <div className="h-1 w-12 bg-amber-400 rounded-full mt-2" />
         <p className="text-slate-400 text-xs font-mono max-w-sm mt-3 uppercase tracking-wider">
           Premium services designed to navigate businesses toward digital growth

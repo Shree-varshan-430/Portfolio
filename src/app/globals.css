@@ -220,3 +220,102 @@ html.lenis {
   outline-offset: 2px !important;
 }
 
+/* Premium Parchment / Nautical Chart Light Theme overrides */
+html.light {
+  --color-ocean-dark: #fbfbf9;
+  --color-ocean-deep: #f5f2eb;
+  --color-ocean-blue: #ebe7dd;
+  --color-gold-glow: #d97706;
+  --color-gold-hover: #b45309;
+  --color-silver: #334155;
+  background-color: #fbfbf9;
+  color: #1e293b;
+}
+
+html.light body {
+  background: radial-gradient(circle at 50% 50%, #fbfbf9 0%, #ebe7dd 100%) !important;
+  color: #1e293b;
+}
+
+/* Scrollbar overrides for light mode */
+html.light ::-webkit-scrollbar-track {
+  background: #f5f2eb;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border: 1px solid rgba(217, 119, 6, 0.15);
+}
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #d97706;
+}
+
+/* Glass panel overrides for light mode */
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.75) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(30, 41, 59, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.05) !important;
+}
+
+html.light .glass-panel-light {
+  background: rgba(255, 255, 255, 0.45) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(30, 41, 59, 0.04) !important;
+}
+
+/* Map grid color adjust for light mode */
+html.light .coordinate-grid {
+  background-image: 
+    linear-gradient(to right, rgba(30, 41, 59, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 41, 59, 0.06) 1px, transparent 1px) !important;
+}
+
+/* Focus outline adjustments */
+html.light .focus-ring:focus-visible {
+  outline: 2px solid #d97706 !important;
+  box-shadow: 0 0 0 4px #fbfbf9 !important;
+}
+
+/* Standard button text color override in light mode */
+html.light .btn-primary {
+  color: #fbfbf9;
+}
+
+html.light .btn-secondary {
+  border-color: rgba(30, 41, 59, 0.15) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
+  color: #1e293b !important;
+}
+html.light .btn-secondary:hover {
+  border-color: rgba(217, 119, 6, 0.4) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
+  color: #d97706 !important;
+}
+
+/* Text color mappings to keep tailwind classes unchanged while updating colors */
+html.light .text-slate-100 { color: #0f172a !important; }
+html.light .text-slate-150 { color: #1e293b !important; }
+html.light .text-slate-200 { color: #334155 !important; }
+html.light .text-slate-300 { color: #475569 !important; }
+html.light .text-slate-400 { color: #57606a !important; }
+html.light .text-slate-500 { color: #6e7681 !important; }
+html.light .text-slate-600 { color: #8c95a0 !important; }
+
+/* Border color overrides */
+html.light .border-slate-800 { border-color: #cbd5e1 !important; }
+html.light .border-slate-800\/40 { border-color: rgba(203, 213, 225, 0.5) !important; }
+html.light .border-slate-800\/60 { border-color: rgba(203, 213, 225, 0.7) !important; }
+html.light .border-slate-700\/60 { border-color: rgba(203, 213, 225, 0.5) !important; }
+html.light .border-slate-850 { border-color: #cbd5e1 !important; }
+
+/* Background color overrides */
+html.light .bg-slate-900 { background-color: #f1f5f9 !important; }
+html.light .bg-slate-900\/60 { background-color: rgba(241, 245, 249, 0.6) !important; }
+html.light .bg-slate-950 { background-color: #f8fafc !important; }
+html.light .bg-slate-950\/80 { background-color: rgba(248, 250, 252, 0.8) !important; }
+html.light .bg-slate-950\/90 { background-color: rgba(248, 250, 252, 0.9) !important; }
+html.light .bg-slate-950\/55 { background-color: rgba(248, 250, 252, 0.55) !important; }
+
+

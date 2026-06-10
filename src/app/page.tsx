@@ -13,6 +13,8 @@ import GrandRoute from "@/components/GrandRoute";
 import SpecialAbilities from "@/components/SpecialAbilities";
 import ExplorationLog from "@/components/ExplorationLog";
 import NavigationCenter from "@/components/NavigationCenter";
+import CommandMenu from "@/components/CommandMenu";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   // Initialize Lenis Smooth Scroll on Mount
@@ -50,6 +52,12 @@ export default function Home() {
 
       {/* Floating HUD Navigation header */}
       <NavigationMap />
+      
+      {/* HUD Keyboard Shortcut Command Menu */}
+      <CommandMenu />
+
+      {/* Floating Back to Top Compass Trigger */}
+      <BackToTop />
       
       {/* Main sections stack */}
       <main className="relative w-full z-10 flex flex-col gap-12 md:gap-20">

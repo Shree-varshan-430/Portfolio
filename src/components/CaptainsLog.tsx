@@ -26,8 +26,11 @@ export default function CaptainsLog() {
           <span>Section 01</span>
         </div>
         <h2 className="text-3xl md:text-5xl font-bold font-sans tracking-tight text-slate-100">
-          The Captain's Log: About Shree Varshan
+          About Me
         </h2>
+        <span className="text-xs font-mono text-amber-400 uppercase tracking-widest mt-1 block">
+          The Captain's Log: Shree Varshan
+        </span>
         <div className="h-1 w-12 bg-amber-400 rounded-full mt-2" />
       </div>
 

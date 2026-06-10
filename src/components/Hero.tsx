@@ -142,10 +142,10 @@ export default function Hero() {
           <button
             onClick={() => scrollToSection("navigation-center")}
             className="btn-secondary focus-ring group"
-            aria-label="Get In Touch"
+            aria-label="Hire me"
           >
             <Mail className="h-4 w-4" />
-            <span>Get In Touch</span>
+            <span>Hire me</span>
           </button>
         </motion.div>
       </div>
