@@ -107,8 +107,19 @@ export default function Footer() {
         </div>
 
         {/* Copyright Bar */}
-        <div className="mt-10 pt-6 border-t border-stone-100 dark:border-stone-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 dark:text-stone-400 gap-3">
+        <div className="mt-10 pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-400 gap-3">
           <p>© {new Date().getFullYear()} R. Shree Varshan. All rights reserved.</p>
+          <div className="flex items-center gap-1.5 font-medium">
+            <span>Developed by</span>
+            <a
+              href="https://aibuildinfra.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#ea580c] hover:text-[#f97316] font-extrabold hover:underline transition-colors"
+            >
+              AI Build Infra
+            </a>
+          </div>
           <p className="font-mono text-[11px]">SaaS Architecture • MCP Protocol • Defense-in-Depth</p>
         </div>
       </div>
