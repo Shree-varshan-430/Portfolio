@@ -74,7 +74,7 @@ const projects: ProjectItem[] = [
     filter: "web",
     desc: "Created a scientific web portal and integrated ERP workflow solutions for a biotechnology laboratory organization.",
     tags: ["Next.js", "ERP Systems", "React", "Secure Auth"],
-    link: "https://bioarthalabs.netlify.app/",
+    link: "https://bioarthalabs.com/",
     github: "https://github.com/Shree-varshan-430",
   },
   {
@@ -85,6 +85,7 @@ const projects: ProjectItem[] = [
     filter: "web",
     desc: "Storytelling web experience crafted with Next.js, fluid micro-animations, and clean typographic hierarchy.",
     tags: ["Next.js", "Animations", "TypeScript"],
+    link: "https://primsastoriesya.com/",
     github: "https://github.com/Shree-varshan-430",
   },
   {
